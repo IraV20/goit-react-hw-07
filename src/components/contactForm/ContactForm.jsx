@@ -15,7 +15,7 @@ const ContactSchema = Yup.object().shape({
     number: Yup.string()
       .matches(/^\d+$/, "Must be only digits")
       .min(3, "Too Short!")
-      .max(7, "Too Long!")
+      .max(8, "Too Long!")
       .required("Required"),
   });
   
